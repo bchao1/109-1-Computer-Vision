@@ -7,15 +7,15 @@ Shared images (like the famous [Lena](https://en.wikipedia.org/wiki/Lenna)) are 
 
 ## Assignments
 - [x] `hw1`: Basic Image Manipulation
-- [] `hw2`: Basic Image Manipulation (2)
+- [ ] `hw2`: Basic Image Manipulation (2)
 - [x] `hw3`: Histogram Equalizqtions 
     - Use `collections.Counter`?
 - [x] `hw4`: Binary Morphology
     - Hit-and-miss `L-shaped`?
 - [x] `hw5`: Gray-scaled Morphology
-- [] `hw6`: Yokoi Connectivity Number
-- [] `hw7`: Thinning
+- [ ] `hw6`: Yokoi Connectivity Number
+- [ ] `hw7`: Thinning
 - [x] `hw8`: Noise Removal
     - (e) Octogonal operator, val = 0?
 - [x] `hw9`: General Edge Detection
-- [] `hw10`: Zero-crossing Edge Detection
+- [ ] `hw10`: Zero-crossing Edge Detection
