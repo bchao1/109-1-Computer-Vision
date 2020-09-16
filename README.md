@@ -18,4 +18,4 @@ Shared images (like the famous [Lena](https://en.wikipedia.org/wiki/Lenna)) are 
 - [x] `hw8`: Noise Removal
     - (e) Octogonal operator, val = 0?
 - [x] `hw9`: General Edge Detection
-- [ ] `hw10`: Zero-crossing Edge Detection
+- [x] `hw10`: Zero-crossing Edge Detection
