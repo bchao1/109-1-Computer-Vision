@@ -97,8 +97,18 @@ def DoG(img, threshold):
 
 def main():
     img = read_image('../data/lena.bmp')
-    img = DoG(img, 1)
-    save_image(img, 'test.png')
+
+    res1 = laplacian_1(img, 15)
+    res2 = laplacian_2(img, 15)
+    res3 = laplacian_3(img, 20)
+    res4 = LoG(img, 3000)
+    res5 = DoG(img, 1)
+    
+    save_image(res1, './results/1.png')
+    save_image(res2, './results/2.png')
+    save_image(res3, './results/3.png')
+    save_image(res4, './results/4.png')
+    save_image(res5, './results/5.png')
 
 if __name__ == '__main__':
     main()
