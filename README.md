@@ -16,5 +16,6 @@ Shared images (like the famous [Lena](https://en.wikipedia.org/wiki/Lenna)) are 
 - `hw6`: Yokoi Connectivity Number
 - `hw7`: Thinning
 - `hw8`: Noise Removal
+    - (e) Octogonal operator, val = 0?
 - `hw9`: General Edge Detection
 - `hw10`: Zero-crossing Edge Detection

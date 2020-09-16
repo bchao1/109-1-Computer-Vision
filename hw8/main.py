@@ -11,16 +11,23 @@ def save_image(img, file):
 # Noise functions
 
 def gaussian_noise(img, amplitude):
-    noise = np.random.normal(scale=amplitude, size=img.shape)
+    noise = np.random.normal(size=img.shape) * amplitude
     return np.clip(img + noise, a_min=0, a_max=255).astype(np.uint8)
 
 def salt_and_pepper_noise(img, prob):
+    # prob = probability of pixel to be black & white
+    # so perturbed probability = prob * 2
+
     h, w = img.shape
     total_pixels = h * w
-    coords = np.random.choice(total_pixels, size=int(total_pixels * prob), replace=False)
+    # Coordinates with perturbed pixels
+    coords = np.random.choice(total_pixels, size=int(total_pixels * 2 * prob), replace=False)
+    # Coordinates with salt-noise pixels
     salt_coords = np.random.choice(coords, size=int(len(coords) * 0.5), replace=False)
     noisy_img = img.copy().ravel()
+    # Pepper-pixels
     noisy_img[coords] = 0
+    # Salt pixels
     noisy_img[salt_coords] = 255
     return noisy_img.reshape(h, w).astype(np.uint8)
 
