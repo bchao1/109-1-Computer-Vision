@@ -244,8 +244,23 @@ def nevatia_babu(img, threshold):
 
 def main():
     img = read_image('../data/lena.bmp')
-    img = robert(img, 12)
-    save_image(img, 'test.png')
+    
+    a = robert(img, 12)
+    b = prewitt(img, 24)
+    c = sobel(img, 38)
+    d = frei_chen(img, 30)
+    e = kirsch_compass(img, 135)
+    f = robinson_compass(img, 43)
+    g = nevatia_babu(img, 12500)
+
+
+    save_image(a, './results/a.png')
+    save_image(b, './results/b.png')
+    save_image(c, './results/c.png')
+    save_image(d, './results/d.png')
+    save_image(e, './results/e.png')
+    save_image(f, './results/f.png')
+    save_image(g, './results/g.png')
 
 if __name__ == '__main__':
     main()
