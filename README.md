@@ -7,7 +7,7 @@ Shared images (like the famous [Lena](https://en.wikipedia.org/wiki/Lenna)) are 
 
 ## Assignments
 - [x] `hw1`: Basic Image Manipulation
-- [ ] `hw2`: Basic Image Manipulation (2)
+- [x] `hw2`: Basic Image Manipulation (2)
 - [x] `hw3`: Histogram Equalizqtions 
     - Use `collections.Counter`?
 - [x] `hw4`: Binary Morphology
