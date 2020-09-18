@@ -30,7 +30,7 @@ def binary_morph(img, func):
     h, w = img.shape
     r = kernel.shape[0] // 2  # radius of kernel
     new_img = np.zeros((h+2*r, w+2*r))
-    img = np.pad(img, r, mode='constant')
+    img = np.pad(img, r, mode='edge')
     for i in range(r, h+r):
         for j in range(r, w+r):
             patch = img[i-r:i+r+1, j-r:j+r+1]

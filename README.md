@@ -13,7 +13,7 @@ Shared images (like the famous [Lena](https://en.wikipedia.org/wiki/Lenna)) are 
 - [x] `hw4`: Binary Morphology
     - Hit-and-miss `L-shaped`?
 - [x] `hw5`: Gray-scaled Morphology
-- [ ] `hw6`: Yokoi Connectivity Number
+- [x] `hw6`: Yokoi Connectivity Number
 - [ ] `hw7`: Thinning
 - [x] `hw8`: Noise Removal
     - (e) Octogonal operator, val = 0?
